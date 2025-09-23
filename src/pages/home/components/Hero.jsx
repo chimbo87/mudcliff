@@ -1,55 +1,57 @@
-import React from 'react';
-import { 
-  PhoneIcon, 
+import React from "react";
+import {
+  PhoneIcon,
   BoltIcon,
   WrenchScrewdriverIcon,
   SunIcon,
   ShieldCheckIcon,
   ClockIcon,
-  StarIcon
-} from '@heroicons/react/24/outline';
+  StarIcon,
+} from "@heroicons/react/24/outline";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   const services = [
     {
       icon: BoltIcon,
-      name: 'Electrical',
-      color: 'text-blue-400'
+      name: "Electrical",
+      color: "text-blue-400",
     },
     {
       icon: WrenchScrewdriverIcon,
-      name: 'Plumbing',
-      color: 'text-orange-400'
+      name: "Plumbing",
+      color: "text-orange-400",
     },
     {
       icon: SunIcon,
-      name: 'Solar',
-      color: 'text-green-400'
-    }
+      name: "Solar",
+      color: "text-green-400",
+    },
   ];
 
   const stats = [
-    { number: '15+', label: 'Years Experience' },
-    { number: '2500+', label: 'Happy Customers' },
-    { number: '24/7', label: 'Emergency Service' },
-    { number: '100%', label: 'Licensed & Insured' }
+    { number: "15+", label: "Years Experience" },
+    { number: "2500+", label: "Happy Customers" },
+    { number: "24/7", label: "Emergency Service" },
+    { number: "100%", label: "Licensed & Insured" },
   ];
 
   return (
     <section className="relative overflow-hidden">
       {/* Background Image with Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")'
+          backgroundImage:
+            'url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")',
         }}
       >
         <div className="absolute inset-0 bg-blue-900/70 mix-blend-multiply"></div>
       </div>
-      
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          
           {/* Left Column - Content */}
           <div className="text-center lg:text-left">
             <div className="mb-4">
@@ -60,16 +62,16 @@ const Hero = () => {
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-              Professional 
+              Professional
               <span className="text-blue-300"> Electrical</span>,
-              <span className="text-orange-300"> Plumbing</span> & 
+              <span className="text-orange-300"> Plumbing</span> &
               <span className="text-green-300"> Solar</span> Services
             </h1>
 
             <p className="text-lg text-blue-100 mb-6 leading-relaxed">
-              From emergency repairs to complete installations, our certified technicians 
-              deliver reliable solutions for your home and business. Available 24/7 for 
-              all your service needs.
+              From emergency repairs to complete installations, our certified
+              technicians deliver reliable solutions for your home and business.
+              Available 24/7 for all your service needs.
             </p>
 
             {/* Service Icons */}
@@ -79,21 +81,20 @@ const Hero = () => {
                   <div className="bg-blue-800/70 backdrop-blur-sm rounded-full p-3 shadow mb-1 border border-blue-500/30">
                     <service.icon className={`h-5 w-5 ${service.color}`} />
                   </div>
-                  <span className="text-xs font-medium text-white">{service.name}</span>
+                  <span className="text-xs font-medium text-white">
+                    {service.name}
+                  </span>
                 </div>
               ))}
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-8">
-              <a
-                href="#contact"
-                className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-300 text-center shadow-lg text-sm"
-              >
+              <button className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-300 text-center shadow-lg text-sm"  onClick={() => navigate("/contacts#contact-form")}>
                 Get Free Quote
-              </a>
+              </button>
               <a
-                href="tel:+1234567890"
+                href="tel:+263773279790"
                 className="bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-500 transition-colors duration-300 flex items-center justify-center space-x-2 shadow-lg text-sm"
               >
                 <PhoneIcon className="h-4 w-4" />
@@ -105,7 +106,9 @@ const Hero = () => {
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center lg:text-left">
-                  <div className="text-xl font-bold text-white">{stat.number}</div>
+                  <div className="text-xl font-bold text-white">
+                    {stat.number}
+                  </div>
                   <div className="text-xs text-blue-200">{stat.label}</div>
                 </div>
               ))}
@@ -118,7 +121,9 @@ const Hero = () => {
               {/* Trust Indicators */}
               <div className="space-y-4">
                 <div className="text-center mb-4">
-                  <h3 className="text-xl font-bold text-white mb-2">Why Choose Us</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    Why Choose Us
+                  </h3>
                   <div className="flex justify-center space-x-4">
                     <BoltIcon className="h-8 w-8 text-blue-300" />
                     <WrenchScrewdriverIcon className="h-8 w-8 text-orange-300" />
@@ -130,19 +135,25 @@ const Hero = () => {
                   <div className="bg-green-500/20 rounded-full p-1">
                     <ClockIcon className="h-4 w-4 text-green-300" />
                   </div>
-                  <span className="text-white text-sm">Same-day emergency service</span>
+                  <span className="text-white text-sm">
+                    Same-day emergency service
+                  </span>
                 </div>
                 <div className="flex items-center space-x-2 p-2 bg-white/5 rounded-md">
                   <div className="bg-green-500/20 rounded-full p-1">
                     <ShieldCheckIcon className="h-4 w-4 text-green-300" />
                   </div>
-                  <span className="text-white text-sm">100% satisfaction guarantee</span>
+                  <span className="text-white text-sm">
+                    100% satisfaction guarantee
+                  </span>
                 </div>
                 <div className="flex items-center space-x-2 p-2 bg-white/5 rounded-md">
                   <div className="bg-green-500/20 rounded-full p-1">
                     <StarIcon className="h-4 w-4 text-green-300" />
                   </div>
-                  <span className="text-white text-sm">5-star rated service</span>
+                  <span className="text-white text-sm">
+                    5-star rated service
+                  </span>
                 </div>
               </div>
             </div>

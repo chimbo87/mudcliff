@@ -1,67 +1,71 @@
-import React from 'react';
-import { 
+import React from "react";
+import {
   BoltIcon,
   WrenchScrewdriverIcon,
   SunIcon,
   ArrowRightIcon,
   HomeIcon,
   BuildingOfficeIcon,
-  CheckCircleIcon
-} from '@heroicons/react/24/outline';
-
+  CheckCircleIcon,
+} from "@heroicons/react/24/outline";
+import { useNavigate } from "react-router-dom"; 
 const ServicesOverview = () => {
+  const navigate = useNavigate();
   const services = [
     {
       id: 1,
       icon: BoltIcon,
-      title: 'Electrical Services',
-      description: 'Complete electrical solutions from wiring to panel upgrades, ensuring safety and reliability for your property.',
-      color: 'blue',
+      title: "Electrical Services",
+      description:
+        "Complete electrical solutions from wiring to panel upgrades, ensuring safety and reliability for your property.",
+      color: "blue",
       features: [
-        'Residential & Commercial Wiring',
-        'Panel Upgrades & Repairs',
-        'Lighting Installation',
-        'Emergency Electrical Repairs'
+        "Residential & Commercial Wiring",
+        "Panel Upgrades & Repairs",
+        "Lighting Installation",
+        "Emergency Electrical Repairs",
       ],
-      bgGradient: 'from-blue-50 to-blue-100',
-      iconColor: 'text-blue-700',
-      borderColor: 'border-blue-200',
-      buttonColor: 'bg-blue-700 hover:bg-blue-800'
+      bgGradient: "from-blue-50 to-blue-100",
+      iconColor: "text-blue-700",
+      borderColor: "border-blue-200",
+      buttonColor: "bg-blue-700 hover:bg-blue-800",
     },
     {
       id: 2,
       icon: WrenchScrewdriverIcon,
-      title: 'Plumbing Services',
-      description: 'Professional plumbing services including installations, repairs, and maintenance for residential and commercial properties.',
-      color: 'orange',
+      title: "Plumbing Services",
+      description:
+        "Professional plumbing services including installations, repairs, and maintenance for residential and commercial properties.",
+      color: "orange",
       features: [
-        'Pipe Installation & Repair',
-        'Drain Cleaning & Unclogging',
-        'Water Heater Services',
-        '24/7 Emergency Plumbing'
+        "Pipe Installation & Repair",
+        "Drain Cleaning & Unclogging",
+        "Water Heater Services",
+        "24/7 Emergency Plumbing",
       ],
-      bgGradient: 'from-orange-50 to-orange-100',
-      iconColor: 'text-orange-600',
-      borderColor: 'border-orange-200',
-      buttonColor: 'bg-orange-600 hover:bg-orange-700'
+      bgGradient: "from-orange-50 to-orange-100",
+      iconColor: "text-orange-600",
+      borderColor: "border-orange-200",
+      buttonColor: "bg-orange-600 hover:bg-orange-700",
     },
     {
       id: 3,
       icon: SunIcon,
-      title: 'Solar Installation',
-      description: 'Sustainable energy solutions with professional solar panel installation and maintenance services.',
-      color: 'green',
+      title: "Solar Installation",
+      description:
+        "Sustainable energy solutions with professional solar panel installation and maintenance services.",
+      color: "green",
       features: [
-        'Solar Panel Installation',
-        'System Design & Consultation',
-        'Battery Storage Solutions',
-        'Maintenance & Monitoring'
+        "Solar Panel Installation",
+        "System Design & Consultation",
+        "Battery Storage Solutions",
+        "Maintenance & Monitoring",
       ],
-      bgGradient: 'from-green-50 to-green-100',
-      iconColor: 'text-green-600',
-      borderColor: 'border-green-200',
-      buttonColor: 'bg-green-600 hover:bg-green-700'
-    }
+      bgGradient: "from-green-50 to-green-100",
+      iconColor: "text-green-600",
+      borderColor: "border-green-200",
+      buttonColor: "bg-green-600 hover:bg-green-700",
+    },
   ];
 
   return (
@@ -73,19 +77,24 @@ const ServicesOverview = () => {
             Our Professional Services
           </h2>
           <p className="text-base text-slate-600 max-w-3xl mx-auto leading-normal">
-            We provide comprehensive electrical, plumbing, and solar services for both 
-            residential and commercial properties with guaranteed quality and reliability.
+            We provide comprehensive electrical, plumbing, and solar services
+            for both residential and commercial properties with guaranteed
+            quality and reliability.
           </p>
-          
+
           {/* Service Types */}
           <div className="flex flex-wrap justify-center gap-3 mt-6">
             <div className="flex items-center space-x-1.5 bg-gray-100 px-3 py-1.5 rounded-full">
               <HomeIcon className="h-4 w-4 text-slate-600" />
-              <span className="text-sm text-slate-700 font-medium">Residential</span>
+              <span className="text-sm text-slate-700 font-medium">
+                Residential
+              </span>
             </div>
             <div className="flex items-center space-x-1.5 bg-gray-100 px-3 py-1.5 rounded-full">
               <BuildingOfficeIcon className="h-4 w-4 text-slate-600" />
-              <span className="text-sm text-slate-700 font-medium">Commercial</span>
+              <span className="text-sm text-slate-700 font-medium">
+                Commercial
+              </span>
             </div>
           </div>
         </div>
@@ -98,17 +107,18 @@ const ServicesOverview = () => {
               className={`group bg-gradient-to-br ${service.bgGradient} rounded-xl p-6 border ${service.borderColor} hover:shadow-lg transition-all duration-300 hover:-translate-y-1`}
             >
               {/* Service Icon */}
-              <div className="mb-4">
+              <div className="flex items-center mb-4">
                 <div className="bg-white rounded-xl p-3 w-14 h-14 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-300">
                   <service.icon className={`h-6 w-6 ${service.iconColor}`} />
                 </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2 ml-4">
+                  {service.title}
+                </h3>
               </div>
 
               {/* Service Content */}
               <div className="mb-4">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  {service.title}
-                </h3>
+              
                 <p className="text-sm text-slate-600 leading-normal mb-4">
                   {service.description}
                 </p>
@@ -117,8 +127,12 @@ const ServicesOverview = () => {
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, index) => (
                     <li key={index} className="flex items-center space-x-2">
-                      <CheckCircleIcon className={`h-4 w-4 ${service.iconColor} flex-shrink-0`} />
-                      <span className="text-sm text-slate-700 font-medium">{feature}</span>
+                      <CheckCircleIcon
+                        className={`h-4 w-4 ${service.iconColor} flex-shrink-0`}
+                      />
+                      <span className="text-sm text-slate-700 font-medium">
+                        {feature}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -128,12 +142,16 @@ const ServicesOverview = () => {
               <div className="space-y-3">
                 <button
                   className={`w-full ${service.buttonColor} text-white py-2.5 px-5 rounded-md font-semibold transition-all duration-300 flex items-center justify-center space-x-1.5 group-hover:shadow-md text-sm`}
+                  onClick={() => navigate("/services")}
                 >
                   <span>Learn More</span>
                   <ArrowRightIcon className="h-4 w-4 group-hover:translate-x-0.5 transition-transform duration-300" />
                 </button>
-                
-                <button className="w-full bg-white text-slate-700 py-2.5 px-5 rounded-md font-semibold border border-gray-200 hover:bg-gray-50 transition-colors duration-300 text-sm">
+
+                <button
+                  className="w-full bg-white text-slate-700 py-2.5 px-5 rounded-md font-semibold border border-gray-200 hover:bg-gray-50 transition-colors duration-300 text-sm"
+                  onClick={() => navigate("/contacts#contact-form")}
+                >
                   Get Free Quote
                 </button>
               </div>
@@ -148,14 +166,21 @@ const ServicesOverview = () => {
               Need Multiple Services?
             </h3>
             <p className="text-sm text-slate-600 mb-4">
-              Save money with our comprehensive service packages. We offer bundled solutions 
-              for electrical, plumbing, and solar installations.
+              Save money with our comprehensive service packages. We offer
+              bundled solutions for electrical, plumbing, and solar
+              installations.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <button className="bg-blue-700 text-white px-6 py-2.5 rounded-md font-semibold hover:bg-blue-800 transition-colors duration-300 text-sm">
+              <button
+                className="bg-blue-700 text-white px-6 py-2.5 rounded-md font-semibold hover:bg-blue-800 transition-colors duration-300 text-sm"
+                onClick={() => navigate("/services")}
+              >
                 View Service Packages
               </button>
-              <button className="bg-white text-blue-700 px-6 py-2.5 rounded-md font-semibold border border-blue-200 hover:bg-blue-50 transition-colors duration-300 text-sm">
+              <button
+                className="bg-white text-blue-700 px-6 py-2.5 rounded-md font-semibold border border-blue-200 hover:bg-blue-50 transition-colors duration-300 text-sm"
+                onClick={() => navigate("/contacts#contact-form")}
+              >
                 Schedule Consultation
               </button>
             </div>

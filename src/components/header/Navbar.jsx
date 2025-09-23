@@ -70,12 +70,18 @@ const Navbar = () => {
               className="bg-white text-blue-700 px-4 py-2 rounded-lg font-medium hover:bg-blue-100 transition-colors duration-300 flex items-center space-x-2"
             >
               <PhoneIcon className="h-4 w-4" />
-              <span>24/7 Emergency</span>
+              <span>Get A Quote</span>
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          {/* Mobile Get Started Button and Menu Button */}
+          <div className="md:hidden flex items-center space-x-2">
+            <button
+              className="bg-white text-blue-700 px-3 py-1.5 rounded-lg font-medium hover:bg-blue-100 transition-colors duration-300 text-sm"
+              onClick={() => navigate('/contacts')} // You can change this to your desired action
+            >
+              Get Started
+            </button>
             <button
               onClick={toggleMenu}
               className="text-white hover:text-blue-200 p-2"
@@ -113,7 +119,7 @@ const Navbar = () => {
             {/* Mobile Emergency Button */}
             <div className="px-3 py-2">
               <a
-                href="tel:+1234567890"
+                href="tel:+263773279790"
                 className="bg-white text-blue-700 px-4 py-2 rounded-lg font-medium hover:bg-blue-100 transition-colors duration-300 flex items-center space-x-2 w-full justify-center"
               >
                 <PhoneIcon className="h-4 w-4" />

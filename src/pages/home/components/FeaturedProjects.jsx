@@ -10,8 +10,9 @@ import {
   StarIcon,
   CheckCircleIcon
 } from '@heroicons/react/24/outline';
-
+import { useNavigate } from "react-router-dom";  
 const FeaturedProjects = () => {
+  const navigate = useNavigate();
   const [activeFilter, setActiveFilter] = useState('all');
 
   const filters = [
@@ -215,7 +216,7 @@ const FeaturedProjects = () => {
                 </div>
 
                 {/* View Project Button */}
-                <button className="w-full bg-gray-50 text-slate-700 py-2 px-3 rounded-md font-semibold hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center space-x-1.5 group-hover:bg-blue-50 group-hover:text-blue-700 text-sm">
+                <button className="w-full bg-gray-50 text-slate-700 py-2 px-3 rounded-md font-semibold hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center space-x-1.5 group-hover:bg-blue-50 group-hover:text-blue-700 text-sm" onClick={() => navigate("/our-work")}>
                   <span>View Full Project</span>
                   <ArrowRightIcon className="h-3.5 w-3.5 group-hover:translate-x-0.5 transition-transform duration-300" />
                 </button>
@@ -234,10 +235,10 @@ const FeaturedProjects = () => {
             electrical, plumbing, and solar installation needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <button className="bg-white text-blue-700 px-6 py-2 rounded-md font-semibold hover:bg-gray-100 transition-colors duration-300 text-sm">
+            <button className="bg-white text-blue-700 px-6 py-2 rounded-md font-semibold hover:bg-gray-100 transition-colors duration-300 text-sm" onClick={() => navigate("/contacts#contact-form")}>
               Get Free Estimate
             </button>
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-500 transition-colors duration-300 border border-blue-500 text-sm">
+            <button className="bg-blue-600 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-500 transition-colors duration-300 border border-blue-500 text-sm" onClick={() => navigate("/our-work")}>
               View All Projects
             </button>
           </div>
