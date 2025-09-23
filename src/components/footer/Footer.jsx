@@ -27,12 +27,12 @@ const Footer = () => {
   ];
 
   const serviceAreas = [
-    'Harare',
-    'Bulawayo', 
+    'Zimre Park',
+    'Msasa Park', 
+    'Borrowdale',
     'Chitungwiza',
-    'Gweru',
-    'Mutare',
-    'Kwekwe'
+    'Hatfiled',
+    'Glen View'
   ];
 
   const quickLinks = [
@@ -84,7 +84,7 @@ const Footer = () => {
                 Call: +263 123 456 789
               </a>
               <a 
-                href="https://wa.me/263123456789" 
+                href="https://wa.me/263773279790" 
                 className="bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600 transition-colors duration-300 flex items-center justify-center space-x-2 whitespace-nowrap"
               >
                 <span>WhatsApp</span>
@@ -122,21 +122,21 @@ const Footer = () => {
                 <div className="flex items-start space-x-3">
                   <PhoneIcon className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="font-semibold text-sm md:text-base">+263 123 456 789</div>
+                    <div className="font-semibold text-sm md:text-base">+26377 327 9790</div>
                     <div className="text-xs md:text-sm text-gray-400">24/7 Emergency Line</div>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <EnvelopeIcon className="h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="font-semibold text-sm md:text-base">info@proservices.co.zw</div>
+                    <div className="font-semibold text-sm md:text-base">info@mudcliff.co.zw</div>
                     <div className="text-xs md:text-sm text-gray-400">Get Free Quote</div>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <MapPinIcon className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <div className="font-semibold text-sm md:text-base">123 Main Street, Harare</div>
+                    <div className="font-semibold text-sm md:text-base">198 Chiremba Rd, Harare, Zimbabwe</div>
                     <div className="text-xs md:text-sm text-gray-400">Head Office</div>
                   </div>
                 </div>
@@ -196,16 +196,7 @@ const Footer = () => {
                 ))}
               </ul>
 
-              {/* Certifications */}
-              <h4 className="text-base md:text-lg font-semibold mt-6 md:mt-8 mb-3 md:mb-4">Certifications</h4>
-              <ul className="space-y-2">
-                {certifications.map((cert, index) => (
-                  <li key={index} className="flex items-center space-x-2">
-                    <ShieldCheckIcon className="h-3 w-3 md:h-4 md:w-4 text-green-400 flex-shrink-0" />
-                    <span className="text-gray-300 text-xs md:text-sm">{cert}</span>
-                  </li>
-                ))}
-              </ul>
+            
             </div>
 
             {/* Newsletter & Social Column */}
@@ -274,7 +265,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0">
             {/* Copyright */}
             <div className="text-gray-400 text-xs md:text-sm text-center md:text-left">
-              © {currentYear} ProServices Zimbabwe. All rights reserved. 
+              © {currentYear} Mudcliff Zimbabwe. All rights reserved. 
               Licensed electrical, plumbing & solar contractor.
             </div>
 
@@ -295,8 +286,8 @@ const Footer = () => {
           {/* Additional Info */}
           <div className="mt-4 pt-4 border-t border-gray-800 text-center text-xs text-gray-500">
             <p>
-              ProServices is a licensed and insured electrical, plumbing, and solar contractor serving Zimbabwe. 
-              License #EPC2024-ZW | Insurance Policy #INS-789456 | Solar Certification #SOL-456789
+              Mudcliff is a licensed and insured electrical, plumbing, and solar contractor serving Zimbabwe. 
+           
             </p>
           </div>
         </div>

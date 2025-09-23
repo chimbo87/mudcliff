@@ -1,18 +1,41 @@
-import React from 'react';
-import { Phone, Clock, Shield, Zap, Star, CheckCircle, ArrowRight } from 'lucide-react';
+import React from "react";
+import {
+  Phone,
+  Clock,
+  Shield,
+  Zap,
+  Star,
+  CheckCircle,
+  ArrowRight,
+} from "lucide-react";
 
 const ServicesHero = () => {
   const features = [
-    { icon: Phone, title: '24/7 Emergency Service', description: 'Call: +263 77 123 4567', color: 'bg-blue-500' },
-    { icon: Clock, title: 'Quick Response Time', description: 'Usually within 30 minutes', color: 'bg-emerald-500' },
-    { icon: Shield, title: 'Licensed & Insured', description: 'All technicians certified', color: 'bg-orange-500' }
+    {
+      icon: Phone,
+      title: "24/7 Emergency Service",
+      description: "Call: +26377 327 9790",
+      color: "bg-blue-500",
+    },
+    {
+      icon: Clock,
+      title: "Quick Response Time",
+      description: "Usually within 30 minutes",
+      color: "bg-emerald-500",
+    },
+    {
+      icon: Shield,
+      title: "Licensed & Insured",
+      description: "All technicians certified",
+      color: "bg-orange-500",
+    },
   ];
 
   const stats = [
-    { number: '500+', label: 'Happy Customers' },
-    { number: '5+', label: 'Years Experience' },
-    { number: '24/7', label: 'Emergency Support' },
-    { number: '100%', label: 'Satisfaction Rate' }
+    { number: "500+", label: "Happy Customers" },
+    { number: "5+", label: "Years Experience" },
+    { number: "24/7", label: "Emergency Support" },
+    { number: "100%", label: "Satisfaction Rate" },
   ];
 
   return (
@@ -49,7 +72,9 @@ const ServicesHero = () => {
             </h1>
 
             <p className="text-sm md:text-base mb-4 opacity-90 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              Expert electrical, plumbing, and solar solutions for your home or business in Harare. Trust our certified professionals for reliable installations and maintenance.
+              Expert electrical, plumbing, and solar solutions for your home or
+              business in Harare. Trust our certified professionals for reliable
+              installations and maintenance.
             </p>
 
             {/* CTA Buttons */}
@@ -67,7 +92,9 @@ const ServicesHero = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-xl md:text-2xl font-bold text-yellow-400">{stat.number}</div>
+                  <div className="text-xl md:text-2xl font-bold text-yellow-400">
+                    {stat.number}
+                  </div>
                   <div className="text-xs text-blue-200">{stat.label}</div>
                 </div>
               ))}
@@ -90,13 +117,22 @@ const ServicesHero = () => {
                   {features.map((feature, index) => {
                     const IconComponent = feature.icon;
                     return (
-                      <div key={index} className="flex items-center group hover:bg-gray-50 p-2 rounded-lg transition-all">
-                        <div className={`w-10 h-10 rounded-full ${feature.color} flex items-center justify-center mr-3 group-hover:scale-110 transition-transform shadow`}>
+                      <div
+                        key={index}
+                        className="flex items-center group hover:bg-gray-50 p-2 rounded-lg transition-all"
+                      >
+                        <div
+                          className={`w-10 h-10 rounded-full ${feature.color} flex items-center justify-center mr-3 group-hover:scale-110 transition-transform shadow`}
+                        >
                           <IconComponent className="h-4 w-4 text-white" />
                         </div>
                         <div className="flex-1">
-                          <h3 className="font-bold text-gray-800 text-sm mb-0.5">{feature.title}</h3>
-                          <p className="text-xs text-gray-600">{feature.description}</p>
+                          <h3 className="font-bold text-gray-800 text-sm mb-0.5">
+                            {feature.title}
+                          </h3>
+                          <p className="text-xs text-gray-600">
+                            {feature.description}
+                          </p>
                         </div>
                       </div>
                     );
@@ -147,8 +183,16 @@ const ServicesHero = () => {
 
       {/* Bottom Wave */}
       <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,96C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" fill="white" fillOpacity="0.1"/>
+        <svg
+          viewBox="0 0 1440 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,96C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            fill="white"
+            fillOpacity="0.1"
+          />
         </svg>
       </div>
     </section>

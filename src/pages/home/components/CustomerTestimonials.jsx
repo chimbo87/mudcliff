@@ -22,7 +22,7 @@ const CustomerTestimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Tendai Mukamuri',
+      name: 'Tendai M',
       location: 'Borrowdale, Harare',
       service: 'electrical',
       serviceIcon: BoltIcon,
@@ -31,13 +31,13 @@ const CustomerTestimonials = () => {
       rating: 5,
       date: 'March 2024',
       avatar: 'TM',
-      testimonial: 'Outstanding electrical work! They completely rewired our home in Borrowdale and installed modern LED lighting throughout. The team was professional, punctual, and cleaned up perfectly after the job. Highly recommended for anyone in Harare.',
+      testimonial: 'Outstanding electrical work from Mudcliff! They completely rewired our home in Borrowdale and installed modern LED lighting throughout. The team was professional, punctual, and cleaned up perfectly after the job. Highly recommended for anyone in Harare.',
       project: 'Complete Home Rewiring',
       verified: true
     },
     {
       id: 2,
-      name: 'Mrs. Chipo Ndoro',
+      name: 'Mrs. Chipo N',
       location: 'Hillside, Bulawayo',
       service: 'plumbing',
       serviceIcon: WrenchScrewdriverIcon,
@@ -46,13 +46,13 @@ const CustomerTestimonials = () => {
       rating: 5,
       date: 'February 2024',
       avatar: 'CN',
-      testimonial: 'Excellent plumbing service! Our kitchen renovation required complete plumbing overhaul. The technicians were knowledgeable, explained everything clearly, and completed the work on schedule. Great value for money.',
+      testimonial: 'Excellent plumbing service from Mudcliff! Our kitchen renovation required complete plumbing overhaul. The technicians were knowledgeable, explained everything clearly, and completed the work on schedule. Great value for money.',
       project: 'Kitchen Plumbing Renovation',
       verified: true
     },
     {
       id: 3,
-      name: 'David Mujuru',
+      name: 'David M',
       location: 'Mount Pleasant, Harare',
       service: 'solar',
       serviceIcon: SunIcon,
@@ -61,13 +61,13 @@ const CustomerTestimonials = () => {
       rating: 5,
       date: 'January 2024',
       avatar: 'DM',
-      testimonial: 'Amazing solar installation! Our 10kW system has been working flawlessly. The team handled everything from permits to installation. Our electricity bills have dropped by 80%. Best investment we ever made!',
+      testimonial: 'Amazing solar installation by Mudcliff! Our 10kW system has been working flawlessly. The team handled everything from permits to installation. Our electricity bills have dropped by 80%. Best investment we ever made!',
       project: '10kW Solar System Installation',
       verified: true
     },
     {
       id: 4,
-      name: 'Grace Sibanda',
+      name: 'Grace S',
       location: 'CBD, Bulawayo',
       service: 'electrical',
       serviceIcon: BoltIcon,
@@ -76,13 +76,13 @@ const CustomerTestimonials = () => {
       rating: 5,
       date: 'December 2023',
       avatar: 'GS',
-      testimonial: 'Professional emergency service! When our office lost power during a crucial presentation, they responded within 30 minutes and had us back up in under an hour. Saved our important client meeting!',
+      testimonial: 'Professional emergency service from Mudcliff! When our office lost power during a crucial presentation, they responded within 30 minutes and had us back up in under an hour. Saved our important client meeting!',
       project: 'Emergency Electrical Repair',
       verified: true
     },
     {
       id: 5,
-      name: 'Martin Chivasa',
+      name: 'Martin C',
       location: 'Avondale, Harare',
       service: 'plumbing',
       serviceIcon: WrenchScrewdriverIcon,
@@ -91,13 +91,13 @@ const CustomerTestimonials = () => {
       rating: 5,
       date: 'November 2023',
       avatar: 'MC',
-      testimonial: 'Top-notch plumbing work! Complete bathroom renovation with modern fixtures. They handled the water pressure issues we had for years. Clean, efficient, and reasonably priced. Will definitely use them again.',
+      testimonial: 'Top-notch plumbing work by Mudcliff! Complete bathroom renovation with modern fixtures. They handled the water pressure issues we had for years. Clean, efficient, and reasonably priced. Will definitely use them again.',
       project: 'Master Bathroom Renovation',
       verified: true
     },
     {
       id: 6,
-      name: 'Joyce Mazuru',
+      name: 'Joyce M',
       location: 'Chitungwiza',
       service: 'solar',
       serviceIcon: SunIcon,
@@ -106,7 +106,7 @@ const CustomerTestimonials = () => {
       rating: 5,
       date: 'October 2023',
       avatar: 'JM',
-      testimonial: 'Fantastic solar service! They designed a perfect system for our family home. The installation was seamless, and the monitoring system helps us track our savings. Professional team from start to finish.',
+      testimonial: 'Fantastic solar service from Mudcliff! They designed a perfect system for our family home. The installation was seamless, and the monitoring system helps us track our savings. Professional team from start to finish.',
       project: '8kW Residential Solar System',
       verified: true
     }
@@ -161,11 +161,11 @@ const CustomerTestimonials = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
-            What Our Customers Say
+            What Our Customers Say About Mudcliff
           </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
             Don't just take our word for it. Here's what homeowners and businesses across 
-            Zimbabwe say about our electrical, plumbing, and solar services.
+            Zimbabwe say about Mudcliff's electrical, plumbing, and solar services.
           </p>
         </div>
 
@@ -249,7 +249,7 @@ const CustomerTestimonials = () => {
                         <CheckBadgeIcon className="h-4 w-4 text-blue-500" />
                       )}
                     </div>
-                    <div className="text-slate-600 text-xs">Verified Customer</div>
+                    <div className="text-slate-600 text-xs">Verified Mudcliff Customer</div>
                   </div>
                 </div>
 
@@ -331,10 +331,10 @@ const CustomerTestimonials = () => {
         {/* Bottom CTA */}
         <div className="mt-12 bg-gradient-to-r from-blue-700 to-blue-800 rounded-xl p-6 text-center text-white">
           <h3 className="text-xl font-bold mb-3">
-            Join Our Satisfied Customers
+            Join Our Satisfied Mudcliff Customers
           </h3>
           <p className="text-blue-100 mb-4 text-sm max-w-2xl mx-auto">
-            Experience the same quality service that has earned us hundreds of 5-star reviews 
+            Experience the same quality service that has earned Mudcliff hundreds of 5-star reviews 
             across Zimbabwe. Get your free quote today and see why we're the trusted choice.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -350,7 +350,7 @@ const CustomerTestimonials = () => {
           <div className="flex flex-wrap justify-center items-center gap-4 mt-6 text-blue-100 text-xs">
             <div className="flex items-center space-x-1">
               <CheckBadgeIcon className="h-4 w-4" />
-              <span>Verified Reviews</span>
+              <span>Verified Mudcliff Reviews</span>
             </div>
             <div className="flex items-center space-x-1">
               <StarIcon className="h-4 w-4 text-yellow-400" />

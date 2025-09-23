@@ -11,6 +11,15 @@ import {
   CheckCircleIcon
 } from '@heroicons/react/24/outline';
 import { useNavigate } from "react-router-dom";  
+
+// Import your images - make sure these paths are correct
+import project01 from '../../../assets/images/mud02.jpg';
+import project02 from '../../../assets/images/mud27.jpg';
+import project03 from '../../../assets/images/mud07.jpg';
+import project04 from '../../../assets/images/mud10.jpg';
+import project05 from '../../../assets/images/mud29.jpg';
+import project06 from '../../../assets/images/mud22.jpg';
+
 const FeaturedProjects = () => {
   const navigate = useNavigate();
   const [activeFilter, setActiveFilter] = useState('all');
@@ -30,7 +39,7 @@ const FeaturedProjects = () => {
       location: 'Downtown Business District',
       date: '2024',
       description: 'Complete electrical system modernization for a 10,000 sq ft office building including LED lighting and smart controls.',
-      image: 'electrical-office',
+      image: project01, // Fixed: using correct variable
       icon: BoltIcon,
       color: 'blue',
       bgColor: 'from-blue-500 to-blue-600',
@@ -45,7 +54,7 @@ const FeaturedProjects = () => {
       location: 'Residential Hills',
       date: '2024',
       description: 'Full plumbing renovation including master bathroom suite, kitchen upgrade, and whole-house repiping.',
-      image: 'plumbing-luxury',
+      image: project02, // Fixed: using correct variable
       icon: WrenchScrewdriverIcon,
       color: 'orange',
       bgColor: 'from-orange-500 to-orange-600',
@@ -60,7 +69,7 @@ const FeaturedProjects = () => {
       location: 'Suburbia Heights',
       date: '2024',
       description: '25kW solar panel system installation with battery storage for energy independence.',
-      image: 'solar-residential',
+      image: project03, // Fixed: was project02, now project03
       icon: SunIcon,
       color: 'green',
       bgColor: 'from-green-500 to-green-600',
@@ -75,7 +84,7 @@ const FeaturedProjects = () => {
       location: 'Commercial District',
       date: '2023',
       description: 'Commercial kitchen electrical installation with high-capacity circuits and safety systems.',
-      image: 'electrical-restaurant',
+      image: project04, // Fixed: was project03, now project04
       icon: BoltIcon,
       color: 'blue',
       bgColor: 'from-blue-500 to-blue-600',
@@ -90,7 +99,7 @@ const FeaturedProjects = () => {
       location: 'Apartment Complex',
       date: '2023',
       description: 'Complete plumbing system installation for 24-unit apartment complex with modern fixtures.',
-      image: 'plumbing-multiunit',
+      image: project05, // Fixed: was project04, now project05
       icon: WrenchScrewdriverIcon,
       color: 'orange',
       bgColor: 'from-orange-500 to-orange-600',
@@ -105,7 +114,7 @@ const FeaturedProjects = () => {
       location: 'Industrial Park',
       date: '2023',
       description: '500kW commercial solar installation powering manufacturing facility with grid-tie system.',
-      image: 'solar-commercial',
+      image: project06, // Fixed: was project05, now project06
       icon: SunIcon,
       color: 'green',
       bgColor: 'from-green-500 to-green-600',
@@ -118,6 +127,9 @@ const FeaturedProjects = () => {
   const filteredProjects = activeFilter === 'all' 
     ? projects 
     : projects.filter(project => project.category === activeFilter);
+
+  // Debug: Check if images are loading
+  console.log('Project images:', projects.map(p => ({ id: p.id, image: p.image })));
 
   return (
     <section className="py-10 lg:py-16 bg-white">
@@ -158,18 +170,20 @@ const FeaturedProjects = () => {
               key={project.id}
               className="group bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-500 overflow-hidden hover:-translate-y-1"
             >
-              {/* Project Image/Placeholder */}
-              <div className={`relative h-56 bg-gradient-to-br ${project.bgColor} overflow-hidden`}>
-                {/* Image placeholder with service icon */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <project.icon className="h-12 w-12 mx-auto mb-3 opacity-80" />
-                    <p className="text-base font-semibold opacity-90">{project.title}</p>
-                  </div>
-                </div>
+              {/* Project Image - Fixed with better styling */}
+              <div className="relative h-56 overflow-hidden bg-gray-200">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  onError={(e) => {
+                    console.error(`Error loading image for project ${project.id}:`, project.image);
+                    e.target.style.display = 'none';
+                  }}
+                />
                 
-                {/* Overlay with view button */}
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                {/* Hover Overlay - Fixed opacity issues */}
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300 flex items-center justify-center">
                   <button className="bg-white text-gray-900 px-3 py-1.5 rounded-md font-semibold opacity-0 group-hover:opacity-100 transform translate-y-3 group-hover:translate-y-0 transition-all duration-300 flex items-center space-x-1.5 text-sm">
                     <EyeIcon className="h-3.5 w-3.5" />
                     <span>View Details</span>

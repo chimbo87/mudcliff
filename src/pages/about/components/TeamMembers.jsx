@@ -17,7 +17,7 @@ const TeamMembers = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "John Mitchell",
+      name: "T Nyapwere",
       position: "Founder & CEO",
       department: "Leadership",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
@@ -31,7 +31,7 @@ const TeamMembers = () => {
     },
     {
       id: 2,
-      name: "Sarah Rodriguez",
+      name: "T Nyapwere",
       position: "Lead Electrician",
       department: "Electrical",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b550?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
@@ -45,7 +45,7 @@ const TeamMembers = () => {
     },
     {
       id: 3,
-      name: "Michael Chen",
+      name: "T Nyapwere",
       position: "Solar Systems Engineer",
       department: "Solar",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
@@ -59,7 +59,7 @@ const TeamMembers = () => {
     },
     {
       id: 4,
-      name: "Lisa Thompson",
+      name: "T Nyapwere",
       position: "Master Plumber",
       department: "Plumbing",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
@@ -73,7 +73,7 @@ const TeamMembers = () => {
     },
     {
       id: 5,
-      name: "David Park",
+      name: "T Nyapwere",
       position: "Project Manager",
       department: "Operations",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
@@ -87,7 +87,7 @@ const TeamMembers = () => {
     },
     {
       id: 6,
-      name: "Emma Wilson",
+      name: "T Nyapwere",
       position: "Customer Success Manager",
       department: "Customer Service",
       image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80",
@@ -219,39 +219,39 @@ const TeamMembers = () => {
             <p className="text-base text-slate-600">The expertise and dedication that drives our success</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-3">
-                <UserGroupIcon className="w-8 h-8 text-white" />
-              </div>
-              <div className="text-3xl font-bold text-slate-800 mb-1">50+</div>
-              <div className="text-sm text-slate-600">Team Members</div>
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+  <div className="text-center">
+    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-3">
+      <UserGroupIcon className="w-8 h-8 text-white" />
+    </div>
+    <div className="text-3xl font-bold text-slate-800 mb-1">50+</div>
+    <div className="text-sm text-slate-600">Team Members</div>
+  </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mx-auto mb-3">
-                <AcademicCapIcon className="w-8 h-8 text-white" />
-              </div>
-              <div className="text-3xl font-bold text-slate-800 mb-1">200+</div>
-              <div className="text-sm text-slate-600">Certifications</div>
-            </div>
+  <div className="text-center">
+    <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mx-auto mb-3">
+      <AcademicCapIcon className="w-8 h-8 text-white" />
+    </div>
+    <div className="text-3xl font-bold text-slate-800 mb-1">200+</div>
+    <div className="text-sm text-slate-600">Certifications</div>
+  </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mx-auto mb-3">
-                <StarIcon className="w-8 h-8 text-white" />
-              </div>
-              <div className="text-3xl font-bold text-slate-800 mb-1">150+</div>
-              <div className="text-sm text-slate-600">Years Combined Experience</div>
-            </div>
+  <div className="text-center">
+    <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mx-auto mb-3">
+      <StarIcon className="w-8 h-8 text-white" />
+    </div>
+    <div className="text-3xl font-bold text-slate-800 mb-1">150+</div>
+    <div className="text-sm text-slate-600">Years Combined Experience</div>
+  </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-slate-500 to-slate-600 rounded-xl flex items-center justify-center mx-auto mb-3">
-                <MapPinIcon className="w-8 h-8 text-white" />
-              </div>
-              <div className="text-3xl font-bold text-slate-800 mb-1">24/7</div>
-              <div className="text-sm text-slate-600">Emergency Support</div>
-            </div>
-          </div>
+  <div className="text-center">
+    <div className="w-16 h-16 bg-gradient-to-br from-slate-500 to-slate-600 rounded-xl flex items-center justify-center mx-auto mb-3">
+      <MapPinIcon className="w-8 h-8 text-white" />
+    </div>
+    <div className="text-3xl font-bold text-slate-800 mb-1">24/7</div>
+    <div className="text-sm text-slate-600">Emergency Support</div>
+  </div>
+</div>
         </div>
 
         {/* Join Our Team CTA */}

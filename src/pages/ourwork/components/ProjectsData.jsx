@@ -1,15 +1,20 @@
-import electrical01 from "../../../assets/images/gol01.png";
-import electrical02 from "../../../assets/images/gol01.png";
-import electrical03 from "../../../assets/images/gol01.png";
-import plumbing01 from "../../../assets/images/gol01.png";
-import plumbing02 from "../../../assets/images/gol01.png";
-import plumbing03 from "../../../assets/images/gol01.png";
-import solar01 from "../../../assets/images/gol01.png";
-import solar02 from "../../../assets/images/gol01.png";
-import solar03 from "../../../assets/images/gol01.png";
-import maintenance01 from "../../../assets/images/gol01.png";
-import maintenance02 from "../../../assets/images/gol01.png";
-import maintenance03 from "../../../assets/images/gol01.png";
+import project01 from "../../../assets/images/mud01.jpg";
+import project02 from "../../../assets/images/mud02.jpg";
+import project03 from "../../../assets/images/mud03.jpg";
+import project04 from "../../../assets/images/mud04.jpg";
+import project05 from "../../../assets/images/mud05.jpg";
+import project06 from "../../../assets/images/mud06.jpg";
+import project07 from "../../../assets/images/mud07.jpg";
+import project08 from "../../../assets/images/mud08.jpg";
+import project09 from "../../../assets/images/mud09.jpg";
+import project10 from "../../../assets/images/mud10.jpg";
+import project11 from "../../../assets/images/mud12.jpg";
+import project12 from "../../../assets/images/mud13.jpg";
+import project13 from "../../../assets/images/mud14.jpg";
+import project14 from "../../../assets/images/mud15.jpg";
+import project15 from "../../../assets/images/mud16.jpg";
+import project16 from "../../../assets/images/mud17.jpg";
+
 
 export const projectsData = [
   {
@@ -27,7 +32,7 @@ export const projectsData = [
       "Complete electrical system upgrade with modern safety features, smart home integration, and energy-efficient lighting throughout the property.",
     fullDescription:
       "This comprehensive electrical rewiring project involved replacing outdated wiring with modern, code-compliant electrical systems. We installed new circuit breakers, upgraded the main electrical panel, and implemented smart home features including automated lighting and energy monitoring. The project included installation of LED lighting throughout, additional power outlets in strategic locations, and dedicated circuits for high-power appliances. Safety features such as GFCI outlets in wet areas and surge protection were also implemented.",
-    images: [electrical01, electrical02, electrical03, electrical01],
+    images: [project08, project02, project03, project04],
     features: [
       "Complete electrical system upgrade",
       "Smart home integration",
@@ -55,7 +60,7 @@ export const projectsData = [
       "Complete plumbing system overhaul with PEX piping, water-efficient fixtures, and advanced water heating solutions for optimal performance.",
     fullDescription:
       "This plumbing installation involved replacing old galvanized pipes with modern PEX piping system throughout the property. We installed water-efficient fixtures including low-flow toilets and faucets, and implemented a tankless water heater for on-demand hot water. The project included proper drainage solutions, backflow prevention devices, and water pressure regulation systems. We also added shut-off valves in strategic locations for easy maintenance and future upgrades.",
-    images: [plumbing01, plumbing02, plumbing03, plumbing01],
+      images: [project08, project06, project07, project08],
     features: [
       "PEX piping system installation",
       "Tankless water heater",
@@ -83,7 +88,7 @@ export const projectsData = [
       "Complete solar power installation with battery backup, grid-tie capability, and energy monitoring system for maximum energy independence.",
     fullDescription:
       "This solar installation project involved designing and installing a comprehensive 5kW solar power system with battery backup. The system includes high-efficiency solar panels, hybrid inverter, lithium-ion battery storage, and smart energy monitoring. We installed roof-mounted panels with optimal orientation for maximum sunlight exposure and implemented a grid-tie system for net metering. The installation includes weatherproof conduits, proper grounding, and remote monitoring capabilities.",
-    images: [solar01, solar02, solar03, solar01],
+      images: [project09, project02, project03, project04],
     features: [
       "5kW solar panel array",
       "Lithium-ion battery backup",
@@ -111,7 +116,7 @@ export const projectsData = [
       "Routine electrical maintenance and safety inspection for commercial property including system testing and preventive maintenance.",
     fullDescription:
       "This comprehensive electrical maintenance service included thorough inspection of all electrical systems, testing of circuit breakers and safety devices, and preventive maintenance tasks. We identified and repaired potential hazards, replaced worn components, and optimized system performance. The service included thermal imaging to detect hot spots, load testing of electrical circuits, and updating safety protocols. Regular maintenance ensures system reliability and prevents costly downtime.",
-    images: [maintenance01, maintenance02, maintenance03, maintenance01],
+      images: [project10, project02, project03, project04],
     features: [
       "Complete system inspection",
       "Safety device testing",
@@ -139,7 +144,7 @@ export const projectsData = [
       "Advanced home automation installation with smart lighting, climate control, security integration, and voice command capabilities.",
     fullDescription:
       "This smart home installation integrated lighting control, HVAC management, security systems, and entertainment controls into a unified automation platform. We installed smart switches, motion sensors, smart thermostats, and integrated security cameras with remote access. The system features voice control compatibility, scheduled automation routines, and energy usage monitoring. All components were professionally installed with proper wiring and network integration for reliable operation.",
-    images: [electrical01, electrical02, electrical03, electrical01],
+      images: [project13, project02, project03, project04],
     features: [
       "Whole-home automation",
       "Voice control integration",
@@ -167,7 +172,7 @@ export const projectsData = [
       "24/7 emergency plumbing service for burst pipe repair, water damage mitigation, and system restoration with minimal disruption.",
     fullDescription:
       "This emergency service responded to a burst pipe situation that caused significant water damage. Our team quickly isolated the water supply, repaired the damaged section, and implemented water extraction and drying procedures. We replaced the compromised piping with upgraded materials, restored water service, and conducted pressure testing to ensure system integrity. The rapid response prevented further damage and restored normal operation within hours.",
-    images: [plumbing01, plumbing02, plumbing03, plumbing01],
+      images: [project12, project02, project03, project04],
     features: [
       "24/7 emergency response",
       "Burst pipe repair",
@@ -195,7 +200,7 @@ export const projectsData = [
       "Efficient solar water heating system installation with thermal panels, storage tank, and backup electric heating for consistent hot water supply.",
     fullDescription:
       "This solar water heating project involved installing thermal solar panels on the roof, connecting them to an insulated storage tank, and integrating with the existing water heating system. The system includes temperature control, circulation pumps, and backup electric heating element for cloudy days. We installed proper mounting hardware, weatherproof connections, and monitoring systems to track energy savings and system performance.",
-    images: [solar01, solar02, solar03, solar01],
+      images: [project14, project02, project03, project04],
     features: [
       "Thermal solar panels",
       "Insulated storage tank",
@@ -223,7 +228,7 @@ export const projectsData = [
       "Comprehensive plumbing maintenance including leak detection, pressure testing, fixture inspection, and preventive care recommendations.",
     fullDescription:
       "This routine maintenance service included thorough inspection of all plumbing components, testing water pressure, checking for leaks, and assessing fixture condition. We cleaned drains, inspected water heater performance, tested shut-off valves, and provided recommendations for preventive maintenance. The service helps identify potential issues before they become major problems, ensuring system reliability and water efficiency.",
-    images: [maintenance01, maintenance02, maintenance03, maintenance01],
+      images: [project15, project02, project03, project04],
     features: [
       "Complete system inspection",
       "Leak detection service",
@@ -251,7 +256,7 @@ export const projectsData = [
       "Energy-efficient LED lighting upgrade for commercial office space with smart controls, motion sensors, and daylight harvesting technology.",
     fullDescription:
       "This lighting upgrade project replaced outdated fluorescent lighting with modern LED fixtures throughout the commercial office space. We installed smart lighting controls with occupancy sensors, daylight harvesting technology, and programmable scheduling. The upgrade significantly reduced energy consumption while improving lighting quality and employee comfort. The project included proper disposal of old fixtures and minimal disruption to business operations.",
-    images: [electrical01, electrical02, electrical03, electrical01],
+      images: [project16, project02, project03, project04],
     features: [
       "LED lighting installation",
       "Smart control system",
@@ -279,7 +284,7 @@ export const projectsData = [
       "Complete bathroom plumbing renovation with modern fixtures, efficient water distribution, and upgraded drainage systems.",
     fullDescription:
       "This bathroom plumbing renovation involved replacing all plumbing lines, installing modern water-efficient fixtures, and upgrading drainage systems. We installed new supply lines, drainage pipes, and ventilation systems to meet current building codes. The project included installation of a new toilet, shower system, vanity, and proper waterproofing to prevent future issues. All work was completed with attention to detail and long-term reliability.",
-    images: [plumbing01, plumbing02, plumbing03, plumbing01],
+      images: [project02, project02, project03, project04],
     features: [
       "Complete pipe replacement",
       "Water-efficient fixtures",
@@ -307,7 +312,7 @@ export const projectsData = [
       "Complete off-grid solar power system with generator backup for remote property, providing reliable electricity independent of utility grid.",
     fullDescription:
       "This off-grid solar installation provides complete energy independence for a remote property. The system includes solar panels, battery bank, charge controller, inverter, and backup generator. We designed the system to meet all electrical needs including lighting, appliances, and water pumping. The installation includes proper battery maintenance systems, generator integration, and remote monitoring capabilities for system performance tracking.",
-    images: [solar01, solar02, solar03, solar01],
+      images: [project06, project02, project03, project04],
     features: [
       "Complete off-grid capability",
       "Large battery storage",
@@ -335,7 +340,7 @@ export const projectsData = [
       "Comprehensive electrical safety inspection including wiring assessment, outlet testing, circuit analysis, and safety compliance verification.",
     fullDescription:
       "This electrical safety inspection service involved thorough examination of all electrical components including wiring condition, outlet safety, circuit breaker functionality, and grounding systems. We used specialized testing equipment to identify potential hazards, measured voltage and current levels, and verified compliance with safety standards. The service included detailed reporting with recommendations for improvements and necessary repairs.",
-    images: [maintenance01, maintenance02, maintenance03, maintenance01],
+      images: [project03, project02, project03, project04],
     features: [
       "Complete safety assessment",
       "Wiring condition analysis",
@@ -363,7 +368,7 @@ export const projectsData = [
       "Uninterruptible power supply system for data center with automatic transfer switches, generator backup, and power conditioning.",
     fullDescription:
       "This critical power system installation ensures continuous operation of a data center during power outages. The project included UPS systems, automatic transfer switches, backup generators, and power conditioning equipment. We installed proper grounding, surge protection, and monitoring systems to maintain power quality and reliability. The system provides seamless transition during utility power failures with zero downtime.",
-    images: [electrical01, electrical02, electrical03, electrical01],
+      images: [project10, project02, project03, project04],
     features: [
       "UPS system installation",
       "Automatic transfer switches",
@@ -391,7 +396,7 @@ export const projectsData = [
       "Whole-house water filtration system with multi-stage purification, UV sterilization, and mineral enhancement for clean, safe drinking water.",
     fullDescription:
       "This water filtration installation provides clean, safe drinking water throughout the property. The system includes sediment filtration, carbon filtration, reverse osmosis, and UV sterilization stages. We installed proper bypass valves for maintenance, pressure gauges for monitoring, and automatic shut-off features. The system improves water quality while maintaining adequate water pressure for all household needs.",
-    images: [plumbing01, plumbing02, plumbing03, plumbing01],
+      images: [project16, project02, project03, project04],
     features: [
       "Multi-stage filtration",
       "UV sterilization",
@@ -419,7 +424,7 @@ export const projectsData = [
       "Solar-powered water pumping system for agricultural irrigation with automatic controls, remote monitoring, and efficient water distribution.",
     fullDescription:
       "This solar pumping system provides reliable water supply for agricultural irrigation without grid electricity dependency. The installation includes solar panels, DC water pump, controller system, and storage tank. We implemented automatic operation based on sunlight availability, remote monitoring capabilities, and efficient water distribution to irrigation zones. The system reduces operational costs and provides sustainable water management.",
-    images: [solar01, solar02, solar03, solar01],
+      images: [project12, project02, project03, project04],
     features: [
       "Solar-powered pumping",
       "Automatic operation",
@@ -447,7 +452,7 @@ export const projectsData = [
       "Comprehensive solar system maintenance including panel cleaning, performance testing, component inspection, and efficiency optimization.",
     fullDescription:
       "This solar maintenance service ensures optimal performance of existing solar installations. We cleaned solar panels, tested system output, inspected all components for wear or damage, and optimized system settings. The service included checking connections, verifying inverter operation, testing battery health, and updating monitoring software. Regular maintenance maximizes energy production and extends system lifespan.",
-    images: [maintenance01, maintenance02, maintenance03, maintenance01],
+      images: [project01, project02, project03, project04],
     features: [
       "Panel cleaning and inspection",
       "Performance testing",
@@ -475,7 +480,7 @@ export const projectsData = [
       "Advanced motor control system for industrial machinery with variable frequency drives, safety interlocks, and remote operation capabilities.",
     fullDescription:
       "This industrial electrical project involved installing sophisticated motor control systems for manufacturing equipment. We implemented variable frequency drives for energy efficiency, safety interlock systems for operator protection, and remote monitoring capabilities. The installation included proper motor starters, control panels, and integration with existing automation systems. All work complied with industrial safety standards and regulations.",
-    images: [electrical01, electrical02, electrical03, electrical01],
+      images: [project02, project02, project03, project04],
     features: [
       "Variable frequency drives",
       "Safety interlock systems",
@@ -503,7 +508,7 @@ export const projectsData = [
       "Specialized plumbing installation for commercial kitchen with grease traps, high-volume fixtures, and compliance with health regulations.",
     fullDescription:
       "This commercial kitchen plumbing project involved installing specialized systems for food service operations. We installed commercial-grade sinks, dishwashers, grease traps, and high-volume water heaters. The system includes proper drainage for food waste, ventilation for steam removal, and compliance with health department regulations. All installations were designed for heavy use and easy maintenance.",
-    images: [plumbing01, plumbing02, plumbing03, plumbing01],
+      images: [project09, project02, project03, project04],
     features: [
       "Commercial-grade fixtures",
       "Grease trap installation",
@@ -531,7 +536,7 @@ export const projectsData = [
       "Advanced hybrid solar system with grid-tie capability, battery storage, and smart energy management for optimal power usage and cost savings.",
     fullDescription:
       "This hybrid solar installation combines solar power generation with battery storage and grid connectivity for maximum flexibility. The system automatically switches between power sources based on availability and cost, prioritizing solar energy and battery usage. We installed smart energy management systems, remote monitoring, and automatic grid synchronization. The system provides uninterrupted power while maximizing energy savings.",
-    images: [solar01, solar02, solar03, solar01],
+      images: [project08, project02, project03, project04],
     features: [
       "Hybrid inverter technology",
       "Smart energy management",

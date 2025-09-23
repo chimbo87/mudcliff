@@ -41,7 +41,7 @@ const QuoteForm = () => {
                   </svg>
                   <div>
                     <h3 className="font-semibold">Call Us Directly</h3>
-                    <p>(555) 123-4567</p>
+                    <p>+26377 327 9790</p>
                   </div>
                 </div>
 
@@ -51,7 +51,7 @@ const QuoteForm = () => {
                   </svg>
                   <div>
                     <h3 className="font-semibold">Email Us</h3>
-                    <p>info@company.com</p>
+                    <p>info@mudcliff.com</p>
                   </div>
                 </div>
 

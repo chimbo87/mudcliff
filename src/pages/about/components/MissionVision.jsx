@@ -45,7 +45,7 @@ const MissionVision = () => {
               that power communities and protect our planet.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div className="flex flex-wrap gap-3">
               <div className="text-center p-3">
                 <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mx-auto mb-2">
                   <LightBulbIcon className="w-5 h-5 text-orange-500" />
@@ -116,39 +116,39 @@ const MissionVision = () => {
             <p className="text-base text-slate-600">The principles that guide everything we do</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="text-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
-              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                <span className="text-xl font-bold text-blue-600">R</span>
-              </div>
-              <h4 className="font-bold text-slate-800 mb-1 text-sm">Reliability</h4>
-              <p className="text-xs text-slate-600">Consistent, dependable service you can trust</p>
-            </div>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+  <div className="text-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+      <span className="text-xl font-bold text-blue-600">R</span>
+    </div>
+    <h4 className="font-bold text-slate-800 mb-1 text-sm">Reliability</h4>
+    <p className="text-xs text-slate-600">Consistent, dependable service you can trust</p>
+  </div>
 
-            <div className="text-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
-              <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                <span className="text-xl font-bold text-orange-600">I</span>
-              </div>
-              <h4 className="font-bold text-slate-800 mb-1 text-sm">Integrity</h4>
-              <p className="text-xs text-slate-600">Honest, transparent business practices</p>
-            </div>
+  <div className="text-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+    <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+      <span className="text-xl font-bold text-orange-600">I</span>
+    </div>
+    <h4 className="font-bold text-slate-800 mb-1 text-sm">Integrity</h4>
+    <p className="text-xs text-slate-600">Honest, transparent business practices</p>
+  </div>
 
-            <div className="text-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
-              <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                <span className="text-xl font-bold text-green-600">S</span>
-              </div>
-              <h4 className="font-bold text-slate-800 mb-1 text-sm">Sustainability</h4>
-              <p className="text-xs text-slate-600">Environmental responsibility in all we do</p>
-            </div>
+  <div className="text-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+    <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+      <span className="text-xl font-bold text-green-600">S</span>
+    </div>
+    <h4 className="font-bold text-slate-800 mb-1 text-sm">Sustainability</h4>
+    <p className="text-xs text-slate-600">Environmental responsibility in all we do</p>
+  </div>
 
-            <div className="text-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
-              <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                <span className="text-xl font-bold text-slate-600">E</span>
-              </div>
-              <h4 className="font-bold text-slate-800 mb-1 text-sm">Excellence</h4>
-              <p className="text-xs text-slate-600">Exceeding expectations in every project</p>
-            </div>
-          </div>
+  <div className="text-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+    <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mx-auto mb-3">
+      <span className="text-xl font-bold text-slate-600">E</span>
+    </div>
+    <h4 className="font-bold text-slate-800 mb-1 text-sm">Excellence</h4>
+    <p className="text-xs text-slate-600">Exceeding expectations in every project</p>
+  </div>
+</div>
         </div>
       </div>
     </div>

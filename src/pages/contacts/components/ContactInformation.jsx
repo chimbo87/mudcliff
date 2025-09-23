@@ -8,33 +8,33 @@ const ContactInformation = () => {
       title: 'Call Us Directly',
       description: 'Speak directly with our expert team',
       details: [
-        { type: 'Emergency Line', number: '(555) 123-EMERG', badge: '24/7' },
-        { type: 'Main Office', number: '(555) 123-4567', badge: 'Mon-Fri' },
-        { type: 'Solar Department', number: '(555) 123-SOLAR', badge: 'Specialized' }
+        { type: 'Emergency Line', number: '+26377 327 9790', badge: '24/7' },
+        { type: 'Main Office', number: '+263 712 285 069', badge: 'Mon-Fri' },
+        { type: 'Solar Department', number: '+263 712 285 069', badge: 'Specialized' }
       ],
       gradient: 'from-blue-500 to-blue-600',
-      button: { text: 'Call Now', href: 'tel:5551234567' }
+      button: { text: 'Call Now', href: 'tel:+263 712 285 069' }
     },
     {
       icon: EnvelopeIcon,
       title: 'Email Us',
       description: 'Send us a message for non-urgent inquiries',
       details: [
-        { type: 'General Inquiries', email: 'info@powersolutions.com' },
-        { type: 'Support Team', email: 'support@powersolutions.com' },
-        { type: 'Solar Quotes', email: 'solar@powersolutions.com' }
+        { type: 'General Inquiries', email: 'info@mudcliff.com' },
+        { type: 'Support Team', email: 'support@mudcliff.com' },
+        { type: 'Solar Quotes', email: 'solar@mudcliff.com' }
       ],
       gradient: 'from-green-500 to-green-600',
-      button: { text: 'Send Email', href: 'mailto:info@powersolutions.com' }
+      button: { text: 'Send Email', href: 'mailto:info@mudcliff.com' }
     },
     {
       icon: MapPinIcon,
       title: 'Visit Our Office',
       description: 'Stop by for a face-to-face consultation',
       details: [
-        { line: '123 Energy Street' },
-        { line: 'Power City, PC 12345' },
-        { line: 'United States' }
+        { line: '198 Chiremba Rd,' },
+        { line: ' Harare' },
+        { line: ' Zimbabwe' }
       ],
       gradient: 'from-orange-500 to-orange-600',
       button: { text: 'Get Directions', href: '#' }

@@ -121,7 +121,7 @@ import {
                   <p className="text-xs text-slate-600">Speak with an expert</p>
                 </div>
               </div>
-              <p className="text-lg font-bold text-blue-700 mb-1">(555) 123-4567</p>
+              <p className="text-lg font-bold text-blue-700 mb-1">+26377 327 9790</p>
               <p className="text-xs text-slate-600">Available 24/7 for emergencies</p>
             </div>
   
@@ -136,7 +136,7 @@ import {
                   <p className="text-xs text-slate-600">Get a detailed quote</p>
                 </div>
               </div>
-              <p className="text-base font-semibold text-orange-600 mb-1">info@company.com</p>
+              <p className="text-base font-semibold text-orange-600 mb-1">info@mudcliff.com</p>
               <p className="text-xs text-slate-600">Response within 2 hours</p>
             </div>
   
